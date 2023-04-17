@@ -1,6 +1,6 @@
 # n0plog-wp
 
-ec2-micro 用
+gce 用
 
 ## セットアップ
 
