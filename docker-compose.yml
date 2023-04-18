@@ -20,4 +20,4 @@ services:
     networks:
       - network
     volumes:
-      - ./volumes/www/:/var/www/html/
+      - ./volumes/www/html/:/var/www/html/
