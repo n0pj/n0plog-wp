@@ -1,0 +1,23 @@
+version: '3.8'
+
+networks:
+  network:
+    driver: bridge
+
+services:
+  wp:
+    build:
+      context: ./
+    container_name: n0plog-wp
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      WORDPRESS_DB_HOST: ${DB_HOST}
+      WORDPRESS_DB_NAME: ${DB_NAME}
+      WORDPRESS_DB_USER: ${DB_USER}
+      WORDPRESS_DB_PASSWORD: ${DB_PASSWORD}
+    networks:
+      - network
+    volumes:
+      - ./volumes/www/:/var/www/html/
