@@ -1,4 +1,4 @@
-FROM wordpress:5.8.1-php8.0-apache
+FROM wordpress:6.0.2-php8.1-apache
 
 # 所有者の変更
 RUN chown -R www-data:www-data /var/www/html
