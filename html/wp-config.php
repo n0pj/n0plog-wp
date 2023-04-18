@@ -68,6 +68,10 @@ define('MYSQL_CLIENT_FLAGS', MYSQLI_CLIENT_SSL);
 
 define('MYSQL_SSL_CA', getenv('MYSQL_SSL_CA'));
 
+define('FORCE_SSL_ADMIN', true);
+
+$_SERVER['HTTPS']='on';
+
 /**#@+
  * Authentication unique keys and salts.
  *
